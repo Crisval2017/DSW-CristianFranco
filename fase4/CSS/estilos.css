@@ -1,0 +1,60 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    text-align: center;
+    align-items: center;
+}
+nav{
+    background-color: olivedrab;
+    text-align: center;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+section{    
+    background-color: orange;
+}
+aside{
+    background-color: steelblue;
+}
+footer{
+    background-color: slategrey;
+}
+/* Menu*/
+.menu li{
+    display: inline-block;
+}
+li a, boton{
+    display: inline-block;
+    color: wheat;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.9em 1em;
+}
+.listadesplegable{
+    display: none;
+    background-color: black;
+    position: absolute;
+}
+.listadesplegable a{
+    color: snow;
+    display: block;
+    text-align: left;
+}
+.boton:hover .listadesplegable{
+    display: block;
+}
+li a:hover{
+    background-color: red;
+}
+@media (max-width:600px) {
+    .contenedor{
+        background-color: orange;
+    }
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
